@@ -1,17 +1,13 @@
 name: Run Tests
 
-on:
-  push:
-    branches-ignore:
-      - main
+on: push
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - run: echo "Triggered by a commit push!"
 
       - name: Set up Python
         uses: actions/setup-python@v5
