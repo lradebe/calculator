@@ -5,7 +5,7 @@ def subtraction(a, b):
     return a - b
 
 def multiplication(a, b):
-    return b * 2
+    return b * a
 
 def division(a, b):
     if b == 0:
